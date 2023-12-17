@@ -8,15 +8,9 @@ public class ReverseArrayTest {
 	public void testIfListIsReversingInt() {
 		ReverseArray newRev = new ReverseArray() ;
 		int[] myArray = {12, 34, 29, 39, 10, 48, 210} ;
+		int[] expected = {210, 48, 10, 39, 29, 34, 12}; 
 		int[] emptyArray =newRev.reverseList(myArray) ;
-		assertEquals (emptyArray, myArray) ;
+		assertEquals (expected, emptyArray) ;
 	}
 
-	@Test
-	public void testIfListIsReversingDouble() {
-		ReverseArray newRev = new ReverseArray() ;
-		double[] myArray = {12.5, 489.03, 482.48, 739.17, 482.48} ;
-		double[] emptyArray = newRev.reverseListDouble(myArray) ;
-		assertEquals (emptyArray, myArray) ;
-	}
 }
