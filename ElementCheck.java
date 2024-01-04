@@ -41,10 +41,6 @@ public class ElementCheck {
 		ElementCheck nowJare = new ElementCheck () ;
 		int[] numbers = {12, 39, 48, 10, 49, 29} ;
 		int isPresent = 12 ;
-		for (int i = 0; i <= numbers.length - 1; i ++) {
-			if (isPresent == numbers[i]) {
-				System.out.print(isPresent) ;
-			}
-		}
+		nowJare.intOccurence(numbers, isPresent);
 	}
 }
